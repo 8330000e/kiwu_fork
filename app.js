@@ -24,7 +24,7 @@ app.use('/member',membarRouter.router);
 
 // 404not Found 
 app.use((req,res)=>{
-    res.status(404).send('404오류다. 끄지라')
+    res.status(404).send('404오류다. 잘못된 접근입니다. 해당 페이지는 존재하지 않습니다.')
 });
 
 app.listen(
